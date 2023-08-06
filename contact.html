@@ -13,7 +13,7 @@
    <div id="page-container">
       <div id="content-wrap">
    <header class="page-header">
-      <img src="img/healdlogo.svg" alt="logo" class="page-header__item">
+   <a href="index.html"><img src="img/healdlogo.svg" alt="logo" class="page-header__item"></a>
       <nav class="main-navigation page-header__item">
           <ul role="menubar" class="navigation-list">
              <li role="presentation">
@@ -46,30 +46,27 @@
       Email: <a  href="mailto:jeheald23@gmail.com"> jeheald23@gmail.com</a><br><br>
       <a href="mailto:jeheald23@gmail.com">Contact me</a>
 
-      <form action="" method="post" id="contact-form">
-        <label class="standard-label" for="contact-email">E-mail: </label>
-        <input type="email" id="contact-email" required>
-      
-        <label class="standard-label" for="telephone">Telephone: </label>
-        <input id="telephone" type="tel">
-      
-        <label class="standard-label" for="myinput">Message: </label>
-        <textarea id="myinput" maxlength="240" required></textarea>
-        <input type="submit" value="Don't click">
+      <form
+        action="https://formspree.io/f/maygqrde"
+        method="POST"
+      >
+        <label>
+          Email:
+          <input type="email" name="email">
+        </label>
+        <label>
+          Telephone: 
+         <input type="tel" name="telephone">
+        </label>
+        <label>
+          Message:
+          <textarea name="message"></textarea>
+        </label>
+        <button type="submit">Send</button>
       </form>
       </div>
    </main>
-    </div>
-
-    <footer class="page-footer" id="footer">
-      <p>Find me on</p>
-      <div class="social-media">
-      <img src="img/317712_code repository_github_repository_resource_icon.svg" alt="Github" />
-      <img src="img/294709_circle_twitter_icon.svg" alt="Twitter" />
-      <img src="img/5296501_linkedin_network_linkedin logo_icon.svg" alt="LinkedIn" />
       </div>
-  </footer>
-</div>
-    <script src="js/tota11y.min.js"></script>
+   </div>
 </body>
 </html>
