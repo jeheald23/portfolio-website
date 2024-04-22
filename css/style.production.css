@@ -152,6 +152,11 @@ button:focus,
   width: 33%;
 }
 
+.grid__item img {
+  width: 100%;
+  height: 200px;
+  }
+
 @supports (display: grid) {
   .grid {
     display: -ms-grid;
