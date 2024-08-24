@@ -207,118 +207,24 @@ button:focus,
   padding: 0;
 }
 
-.svg-container {
-  text-align: center;
+
+
+
+
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap; /* This allows multiple images to wrap within the container */
+  gap: 20px; /* Adds space between images */
 }
 
-@media all and (max-width: 750px) {
-  /* shared code */
+.centered-container img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain; /* Ensures the images retain their aspect ratio within the max dimensions */
 }
 
-@media all and (max-width: 500px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
-  }
-
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-}
-
-@-webkit-keyframes color-change {
-  0% {
-    fill: var(--zero-fill);
-  }
-
-  50% {
-    fill: var(--fifty-fill);
-  }
-
-  100% {
-    fill: var(--hundred-fill);
-  }
-}
-
-@keyframes color-change {
-  0% {
-    fill: var(--zero-fill);
-  }
-
-  50% {
-    fill: var(--fifty-fill);
-  }
-
-  100% {
-    fill: var(--hundred-fill);
-  }
-}
-
-.sun {
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  -webkit-animation-name: color-change;
-  animation-name: color-change;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud {
-  -webkit-animation-duration: 30s;
-  animation-duration: 30s;
-  -webkit-animation-name: cloud-move;
-  animation-name: cloud-move;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
 

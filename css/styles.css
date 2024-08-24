@@ -250,3 +250,8 @@ button:focus,
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
+.case-study-img {
+  width: 100%;
+  height: auto
+}

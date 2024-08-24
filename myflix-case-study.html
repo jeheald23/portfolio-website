@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: MyFlix App</title>
+</head>
+<body>
+
+    <h1>Case Study: MyFlix App</h1>
+    <div class="centered-container">
+        <img src="img/myflix.png" alt="MyFlix App">
+    </div>
+    
+    
+    <h2>Overview</h2>
+    <p>The MyFlix App is a web application developed using the MERN stack. It allows users to create an account, view and search a list of movies, get detailed information on each movie, add movies to their "Favorites," and manage their profile details. This project was part of the Full-Stack Web Development course at CareerFoundry, where I built the application from scratch, integrating server-side and client-side components into a cohesive and functional product.</p>
+
+    <h2>Purpose and Context</h2>
+    <p>The MyFlix App was conceived as a learning project within the context of my Full-Stack Web Development course at CareerFoundry. The primary goal was to gain hands-on experience with the MERN stack by building a fully functional web application. This project served as an opportunity to practice and master in-demand development skills, including database management, API creation, and front-end development, while providing a tangible product to showcase in my portfolio.</p>
+
+    <h2>Objective</h2>
+    <p>The primary objective of this project was to develop proficiency in the MERN stack by creating a web application from the ground up. This involved mastering MongoDB for database management, Express and Node.js for server-side development, and React for building the client-side interface. The project culminated in the creation of the MyFlix App, which not only met the course requirements but also provided me with a comprehensive understanding of full-stack development.</p>
+
+    <h2>Approach</h2>
+    <p>The MERN stack comprises four core technologies:</p>
+    <ul>
+        <li><strong>MongoDB:</strong> A NoSQL document database ideal for handling JSON data.</li>
+        <li><strong>Express:</strong> A flexible web application framework for Node.js.</li>
+        <li><strong>React:</strong> A powerful JavaScript library for building user interfaces.</li>
+        <li><strong>Node.js:</strong> A JavaScript runtime environment that enables server-side scripting.</li>
+    </ul>
+    <p>I began by developing each component individually, starting with the database, followed by the server-side API, and finally, the client-side interface. Once each part was functional, I integrated them to create the final product, ensuring seamless interaction between the server and client sides.</p>
+
+    <h2>Database</h2>
+
+        <p>For the database, I used MongoDB, a non-relational database optimized for storing and retrieving JSON data. I created collections for "movies" and "users," each with the necessary attributes, using Mongo Shell. Mongo Atlas was employed for managing and monitoring the database, providing an intuitive interface to visualize data and perform database operations.</p>
+    
+    <div class="image-container">
+        <img src="img/mongodb.png" alt="MyFlix App">
+    </div>
+
+
+
+    <h2>Server-Side Development</h2>
+    <p>The server-side component was developed using Express and Node.js. I built a RESTful API to make the JSON data accessible, utilizing HTTP methods such as GET and POST for data retrieval and submission. CRUD (Create, Read, Update, Delete) operations were implemented to interact with the database. For security, I incorporated HTTP and JWT authentication, ensuring that only authenticated users could access specific API endpoints. The API's functionality was thoroughly tested using Postman, allowing me to verify the accuracy of the HTTP methods and authentication processes.</p>
+    <div class="centered-container">
+        <img src="img/getmovies.png" alt="Postman get movies">
+        <img src="img/putusername.png" alt="Postman put user">
+    </div>
+
+
+
+    <h2>Client-Side Development</h2>
+    <p>After completing the server-side components, I developed the client-side interface using React. The interface includes several key features:</p>
+    <ul>
+        <li><strong>Registration and Login:</strong> Components that allow users to create an account and log in securely.</li>
+        <li><strong>Main View:</strong> A comprehensive list of movies fetched from the database.</li>
+        <li><strong>Movie Cards:</strong> Individual cards displaying detailed information about each movie.</li>
+        <li><strong>Favorites:</strong> Functionality enabling users to add movies to their "Favorites" list.</li>
+        <li><strong>Profile View:</strong> A section where users can view and update their details, as well as manage their favorite movies.</li>
+    </ul>
+    <p>To enhance the user experience, I implemented Redux to manage state and handle the search functionality on the main view page, ensuring efficient and responsive filtering of movies.</p>
+
+    <div class="centered-container">
+        <img src="img/login.png" alt="MyFlix login">
+        <img src="img/moviecard.png" alt="Amelie movie card">
+        <img src="img/profileview.png" alt="MyFlix profile">
+    </div>
+
+    <h2>Challenges and Solutions</h2>
+    <p>One of the significant challenges I faced was with React, particularly in handling authentication tokens and the users/username endpoint. Another challenge involved updating the profile view automatically when user information changed. These issues required extensive troubleshooting, guidance from my tutor and mentor, and collaborative problem-solving through peer-programming sessions. Overcoming these obstacles not only deepened my understanding of React but also improved my problem-solving skills.</p>
+
+    <h2>Final Thoughts</h2>
+    <p>Developing the MyFlix App was a rewarding experience that significantly advanced my skills in full-stack development. The process of building this application from the ground up—and overcoming the inevitable challenges—has given me a deep familiarity with the MERN stack. While this project required considerable time and effort, it has equipped me with the knowledge and confidence to tackle similar projects more efficiently in the future.</p>
+
+    <h2>Credits</h2>
+    <ul>
+        <li><strong>Role:</strong> Lead Developer</li>
+        <li><strong>Tutor:</strong> Zaheer Abbas</li>
+        <li><strong>Mentor:</strong> Joel David Cross</li>
+        <li><strong>Additional Support:</strong> Peer-programming and assistance from CareerFoundry classmates</li>
+    </ul>
+    <a href="index.html" class="button">Back to Home</a>
+    <a href="https://github.com/jeheald23/myflix-client" class="button">View on GitHub</a>
+    <a href="https://myflix-client.netlify.app/" class="button">View Live site</a>
+</html>
